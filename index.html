@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV - Emiliano Torrejón</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="cv">
+      <header class="header">
+        <h1>Emiliano Torrejón</h1>
+        <p class="subtitle">
+          Técnico Electromecánico | Electricista | Estudiante Full Stack |
+          Mantenimiento General e Industrial
+        </p>
+      </header>
+
+      <div class="content">
+        <aside class="sidebar">
+          <section>
+            <h3>Contacto</h3>
+            <ul class="contact-list">
+              <li>📅 16/03/1994</li>
+              <li>📍 Gro. Baigorria</li>
+              <li>📞 3413051616</li>
+              <li>✉️ emilianotorrejon@gmail.com</li>
+              <li>🚗 Carnet B1</li>
+              <li>🕓 Disponibilidad Full Time</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Perfil Profesional</h3>
+            <p>
+              Técnico electromecánico con experiencia en mantenimiento eléctrico
+              industrial y hospitalario. Formación en programación Full Stack.
+              Perfil orientado a la resolución de problemas, mejora continua y
+              trabajo en entornos técnicos.
+            </p>
+          </section>
+
+          <section>
+            <h3>Educación</h3>
+            <p>
+              <strong>Técnico Electromecánico</strong><br />
+              E.E.T Nº 293 “Posta de San Lorenzo”<br />
+              Promoción 2012
+            </p>
+          </section>
+
+          <section>
+            <h3>Formación Complementaria</h3>
+            <ul>
+              <li>The Odin Project – Full Stack (en curso)</li>
+              <li>Instalador de aires acondicionados</li>
+              <li>Inglés oral intermedio</li>
+              <li>Portugués oral avanzado</li>
+            </ul>
+          </section>
+        </aside>
+
+        <main class="main">
+          <section>
+            <h2>Experiencia Profesional</h2>
+
+            <!-- EXPERIENCIA LABORAL -->
+            <div class="job">
+              <div class="job-header">
+                <h4>Electricista Independiente</h4>
+                <span>Dic 2024 – Actualidad</span>
+              </div>
+              <p>
+                Electricidad domiciliaria e industrial - Armado de tableros -
+                Reparación de puentes grúa - Conocimientos en variadores y PLC -
+                Instalación de aires acondicionados.
+              </p>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <h4>Electricista y Mantenimiento General</h4>
+                <span>Jun 2021 – Dic 2024</span>
+              </div>
+              <p>
+                Mantenimiento eléctrico/general - Coordinador de guardias
+                activas y pasivas.
+              </p>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <h4>Electricista Independiente</h4>
+                <span>Ene 2021 – Jun 2021</span>
+              </div>
+              <p>Instalaciones eléctricas domiciliarias y empresariales.</p>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <h4>Praxair S.A.</h4>
+                <span>Ene 2020 – Ene 2021</span>
+              </div>
+              <p>Administración y data entry (eventual).</p>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <h4>Vicentín S.A.I.C.</h4>
+                <span>Ene 2017 – Dic 2018</span>
+              </div>
+              <p>
+                Administración y data entry - Coordinador de turno (eventual).
+              </p>
+            </div>
+          </section>
+          <!-- BLOQUE TÍTULO TÉCNICO -->
+          <div class="job titulo-block">
+            <div class="job-header">
+              <h4>Título Técnico Electromecánico</h4>
+            </div>
+
+            <div class="titulo-img">
+              <img
+                src="img/titulo1.jpg"
+                alt="Título Frente"
+                onclick="openModal(this)"
+              />
+              <img
+                src="img/titulo2.jpg"
+                alt="Título Dorso"
+                onclick="openModal(this)"
+              />
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- MODAL FUERA DEL LAYOUT -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <script>
+      function openModal(img) {
+        document.getElementById('imageModal').style.display = 'flex';
+        document.getElementById('modalImg').src = img.src;
+      }
+
+      function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>

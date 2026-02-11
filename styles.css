@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #f4f7fa;
+  font-family: 'Inter', sans-serif;
+  color: #1f2933;
+}
+
+.cv {
+  width: 1000px;
+  margin: 40px auto;
+  background: white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  background: #0f3d57;
+  color: white;
+  padding: 40px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  width: 32%;
+  background: #f0f4f8;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.sidebar h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  color: #0f3d57;
+  border-left: 4px solid #0f3d57;
+  padding-left: 10px;
+}
+
+.sidebar p,
+.sidebar li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul {
+  padding-left: 18px;
+}
+
+.main {
+  width: 68%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.main h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  color: #0f3d57;
+}
+
+.job {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.job-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.job-header span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.job p {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.titulo-img {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.titulo-img img {
+  width: 35%;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dfe6ee;
+  transition: transform 0.2s ease;
+}
+
+.titulo-img img:hover {
+  transform: scale(1.03);
+}
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 85%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.sidebar section {
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dde5ec;
+}
+
+.sidebar section:last-child {
+  border-bottom: none;
+}
